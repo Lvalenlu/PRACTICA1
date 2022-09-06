@@ -1,0 +1,31 @@
+table{
+    border: 2px solid #DAF6E9;
+    border-collapse: collapse;
+    margin:0 auto;
+    border-style: dashed;
+}
+
+thead tr, th{
+    background-color: #B7D2C5;
+    border: 2px dashed #DAF6E9;
+    width: 150px;
+}
+tbody td{
+    background-color: #D2EEE1;
+    border: 2px dashed white;
+}
+caption{
+    background-color: #638676;
+    color: aliceblue;
+    font-size: larger;
+    border: 2px solid black
+}
+h1{
+    text-align: center;
+}
+p{
+    text-align: center;
+}
+tfoot td{
+    text-align: center;
+}

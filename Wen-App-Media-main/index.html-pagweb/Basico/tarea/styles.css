@@ -1,0 +1,41 @@
+p~button{
+    color: rgb(122, 117, 48);
+    border: 2px solid;
+}
+div+ p{
+    color: #FFFEF1;
+    background-color: #E6AC8C;
+    padding: 2%;
+}
+h2, h3{
+    text-align: center;
+    background-color: blanchedalmond;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+article>button{
+    border-radius: 10px;
+    background-color: chocolate;
+    color: azure;
+    padding: 10px;
+}
+.par{
+    color: darkblue;
+    background-color: cyan;
+}
+#inicio{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+p.par h1#inicio{
+    padding: 15px;
+
+}
+footer{
+    background-color: #638676;
+    color: aliceblue;
+    border: 2px solid black
+}
+a[href]{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: aquamarine;
+    background-color: black;
+}

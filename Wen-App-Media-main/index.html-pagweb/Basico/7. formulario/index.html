@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <form id="dataform" method="post" action="./backend/receive.php">
+        <fieldset>
+            <label for="name">Datos personales: </label>
+            <input type="text"
+            id="name"
+            name="name"
+            placeholder="Introduce tu nombre: "
+            minlength="3"
+            maxlength="50"
+            title="Introduce al menos 3 caracteres máximo 50"
+            tabindex="0"
+            autofocus="true"
+            autocomplete="off"
+            required
+            >
+            <br><br>
+            <select id="typeDocument" name="typeDocument">
+                <option value="nada" select="selected" >Seleccione un tipo de documento</option>
+                <option value="cc">Cédula de ciudadanía</option>
+                <option value="ti">Tarjeta de identidad</option>
+                <option value="ce">Cédula extranjera</option>
+            </select><br>
+            <label for="document">No. documento: </label>
+            <input type="number" 
+            id="document" 
+            name="document" 
+            placeholder="Introduce tu documento de identidad"
+            min="2"
+            max="99"
+            tabindex="1"><br>
+            <label for="estadoCivil">Estado civil: </label>
+            <input type="radio" name="eCivil" id="eCivil" value="soltero">Soltero(a)
+            <input type="radio" name="eCivil" id="eCivil" value="casado">Casado(a)
+            <input type="radio" name="eCivil" id="eCivil" value="divor">Divorciado(a)
+            <input type="radio" name="eCivil" id="eCivil" value="viudo">Viudo(a)
+            <br>
+            <label for="num">Número telefónico</label>
+            <input type="tel" name="num" id="num"><br>
+            <label for="link">Página de referencia/contacto: </label>
+            <input type="url" name="link" id="link">
+        </fieldset>
+        <fieldset><legend>Información de estudio y otros:</legend>
+            <label for="color">Color favorito: </label>
+            <input type="color" id="color"><br>
+            <label for="dateInsc">Fecha de inscripción:</label>
+            <input type="date" id="dateInsc">
+            <label for="documentFile">Cargue los documentos de requisitos: </label><br>
+            <input type="file" name="file" name="file"><br>
+            <label for="hora">Indique la hora de inicio de clases: </label>
+            <input type="time" name="hora" id="hora"><br>
+        </fieldset>
+        <fieldset><legend>Experiencia talleres</legend>
+            <label for="nivel">¿Cuál fue su nivel de satisfacción con los taller?</label><br>
+            <input type="range" name="nivel" id="nivel"><br>
+            <label for="taller">¿En qué semana aplicó los talleres?</label>
+            <input type="week" name="taller" id="taller"><br>
+            <label for="resumen">Cuentenos su experiencia con el curso</label><br>
+            <textarea name="resumen" id="resumen" cols="80" rows="5"></textarea><br>
+            <label for="browser">¿Qué tipo de curso hizo</label>
+            <input list="browsers" name="browser" id="browser">
+            <datalist id="browsers">
+                <option value="Deporte">
+                <option value="Artes">
+                <option value="Desarrollo personal">
+                <option value="Cocina">
+                <option value="Safari">
+            </datalist>
+            <input id="year" name="año actual" type="hidden" value="2022">
+        </fieldset>
+        <fieldset>
+            <label for="lenguajes">Lenguajes de programación: </label>
+            <select id="lenguajes"name="lenguajes">
+                <optgroup label="Lenguajes tipados">
+                    <option value="java">Java</option>
+                    <option value="cSharp">C#</option>
+                    <option value="c">C++</option>
+                </optgroup>
+                <optgroup label="lenguajes no tipados">
+                    <option value="python">Python</option>
+                    <option value="js">JavaScript</option>
+                </optgroup><br><br>
+            </select><br>
+        </fieldset>
+        <label for="acepta">¿Acepta terminos y condiciones?</label>
+        <input type="checkbox" id="termino">
+        <hr>
+        <input type="submit" value="Envio de datos"><!--PHP-->
+        <button id="validar">Validar</button><!--JS-->
+        <br>
+        <input type="reset" value="Restablecer datos"><br><br>
+        <!--time, range, tel, week, url, reset, textarea, datalist y hidden-->
+        <script src="./scripts/main.js"></script>
+    </form>
+</body>
+</html>
